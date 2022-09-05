@@ -1,0 +1,241 @@
+* {
+  font-family: "Lalezar", cursive;
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* scrollbar */
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f8f8f8;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #8e2de2;
+}
+::-webkit-scrollbar-thumb {
+  background: #8e2de2;
+  border-radius: 2px;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+
+/* btn up */
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+.button-up {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: 50px;
+  padding-right: 20px;
+  z-index: 9;
+}
+
+a.btn-up {
+  color: rgb(95, 95, 95);
+  font-size: 40px;
+}
+
+a.btn-up {
+  color: #9aa3a2;
+  opacity: 0.9;
+}
+
+a.btn-up:hover {
+  color: #2b0081;
+  opacity: 0.7;
+  transition: 0.8s;
+}
+
+/* end btn up */
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+
+/* start header */
+/* ////////////////////////////////////////////////////////////// */
+.bg {
+  color: white;
+}
+.rgba {
+  background: #8e2de2;
+  background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2);
+  background: linear-gradient(to right, #4a00e0, #8e2de2);
+}
+/* end header */
+/* ////////////////////////////////////////////////////////////// */
+
+/* start navbar */
+/* ////////////////////////////////////////////////////////////// */
+.nav-link {
+  color: white;
+}
+.active {
+  background-color: #ff2ba7;
+  color: white;
+  border-radius: 10px;
+  transition: 0.8s;
+}
+
+.navbar-brand {
+  color: white;
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-weight: 900;
+  text-shadow: 1px 1px 2px #4b00e0a1;
+}
+.navbar-brand:hover {
+  color: #ff2ba7;
+  transition: 0.9s;
+}
+/* .nav-link.active {
+  color: #ffffff;
+  background-color: #5d3381;
+  border-color: #dee2e6 #dee2e6 #fff;
+} */
+.btn-light {
+  background-color: #db0f86;
+  color: white;
+  border: none;
+  border-radius: 35px;
+  padding: 5px 25px;
+}
+.btn-light:hover {
+  background-color: rgb(235, 235, 235);
+  color: black;
+  transition: 0.8s;
+}
+/* end navbar */
+/* ////////////////////////////////////////////////////////////// */
+
+/* start header */
+/* ////////////////////////////////////////////////////////////// */
+
+.floating-img {
+  transform: translateY(-10%);
+  animation: floater 4.5s infinite;
+  transition: ease 0.8s;
+}
+
+@keyframes floater {
+  50% {
+    transform: translateY(1%);
+    transition: ease 0.5s;
+  }
+}
+
+/* end header */
+/* ////////////////////////////////////////////////////////////// */
+
+/* end section1 */
+/* ////////////////////////////////////////////////////////////// */
+/* end section1 */
+/* ////////////////////////////////////////////////////////////// */
+
+/* end section2 */
+/* ////////////////////////////////////////////////////////////// */
+.icon {
+  background-color: #db0f86b0;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  font-size: 30px;
+  color: white;
+  margin: auto;
+}
+
+.text-service1 {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.text-service2 {
+  color: rgb(226, 226, 226);
+  font-size: 17px;
+  font-weight: 500;
+}
+.bg-card {
+  background: #8e2de2;
+  background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2);
+  background: linear-gradient(to right, #4a00e0, #8e2de2);
+  color: white;
+  border-radius: 25px;
+  box-shadow: 2px 2px 4px #00000059;
+  box-shadow: 0px 0px 0px grey;
+  transition: box-shadow 0.6s ease-out;
+  box-shadow: 0.8px 0.9px 3px grey;
+}
+.bg-card:hover {
+  box-shadow: 1px 8px 20px grey;
+  transition: box-shadow 0.6s ease-in;
+  cursor: pointer;
+}
+/* end section2 */
+/* ////////////////////////////////////////////////////////////// */
+
+/* start fotter */
+/* ////////////////////////////////////////////////////////////// */
+.bg-footer {
+  background-image: url(../img/wave.png);
+  background-position: center;
+}
+
+.icon-footer a i {
+  background-color: #ce5c9f;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  font-size: 25px;
+  color: white;
+  margin: auto;
+  transition: all 0.9s;
+}
+.icon-footer a i:hover {
+  background-color: #6e686cc0;
+}
+.text-footer2 {
+  color: rgb(77, 77, 77);
+  letter-spacing: 1.3px;
+  font-size: 17px;
+  font-weight: 600;
+}
+/* end footer */
+/* ////////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+/* media query */
+@media only screen and (max-width:768px) {
+
+    .btn-light{
+        text-align: center;
+    }
+    /* section1 */
+    .text-about{
+        text-align: center;
+    }
+    .img-about{
+        margin-top: 15px;
+    }
+
+
+
+
+    /* footer */
+    .icon-footer a i {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 19px;
+        padding-top: 13px !important;
+    }
+    .text-footer2 {
+        margin-bottom: 60px !important;
+    }
+}
